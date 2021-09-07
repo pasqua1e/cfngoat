@@ -71,6 +71,7 @@ Resources:
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-ebs"
 
   ### CFN Does not Support Volume Snapshot
+      Encrypted: True
 
   EBSAttachment:
     Type: AWS::EC2::VolumeAttachment
